@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ExplicitIntent 실습"
+        android:textColor="#8BC34A"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <!-- 위: 내가 고른 도형 -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_weight="2"
+        android:padding="10dp"
+        app:srcCompat="@drawable/circle" />
+
+    <!-- 아래: 도형 9개 (3x3) -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1.5">
+
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <FrameLayout android:id="@+id/frame_layout08" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/image08" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" app:srcCompat="@drawable/shape08" />
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frame_layout04" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/image04" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" app:srcCompat="@drawable/shape04" />
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frame_layout03" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/image03" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" app:srcCompat="@drawable/shape03" />
+            </FrameLayout>
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <FrameLayout android:id="@+id/frame_layout02" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/image02" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" app:srcCompat="@drawable/shape02" />
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frame_layout09" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/image09" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" app:srcCompat="@drawable/shape09" />
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frame_layout06" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/image06" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" app:srcCompat="@drawable/shape06" />
+            </FrameLayout>
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <FrameLayout android:id="@+id/frame_layout07" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/image07" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" app:srcCompat="@drawable/shape07" />
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frame_layout01" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/image01" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" app:srcCompat="@drawable/shape01" />
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frame_layout05" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/image05" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" app:srcCompat="@drawable/shape05" />
+            </FrameLayout>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00ACC1"
+        android:text="결과보기"
+        android:textSize="20sp" />
+</LinearLayout>
